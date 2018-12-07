@@ -22,4 +22,6 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  database: sosmed_app_production
+  username: sosmed_app
+  password: <%= ENV['SOSMED_APP_DATABASE_PASSWORD'] %>

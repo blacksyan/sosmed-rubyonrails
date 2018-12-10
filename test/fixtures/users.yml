@@ -4,16 +4,31 @@ ilham:
   password_digest: <%= User.digest('password') %>
   admin: true
 
+ilham2:
+  name: Ilham Adi
+  email: ilham2@gmail.com
+  password_digest: <%= User.digest('password') %>
+
 adi:
   name: Adi
   email: adi@gmail.com
-  password_digest: <%= User.digest('password') %>  
+  password_digest: <%= User.digest('password') %>
+
+adi2:
+  name: Adi
+  email: adi2@gmail.com
+  password_digest: <%= User.digest('password') %>
 
 pratama:
   name: Pratama
   email: pratama@gmail.com
   password_digest: <%= User.digest('password') %>    
-  
+
+ais:
+  name: Ais
+  email: ais@gmail.com
+  password_digest: <%= User.digest('password') %>    
+
 
 <% 30.times do |n| %>
 user_<%= n %>:

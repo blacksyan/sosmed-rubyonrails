@@ -208,12 +208,13 @@ input {
     img {
       display: block;
       padding: 0px 0;
+      margin-bottom: 3px;
     }
   }
   .timestamp {
     color: $gray-light;
     display: block;
-    margin-left: 60px;
+    margin-left: 90px;
   }
   .gravatar {
     float: left;

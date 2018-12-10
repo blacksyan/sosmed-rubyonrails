@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+first_post:
+  content: "Halo"
+  created_at: <%= 2.years.ago %>
+  user: ilham
+
+second_post:
+  content: "Halo again"
+  created_at: <%= 5.hours.ago %>
+  user: ilham
+
+third_post:
+  content: "Halo more"
+  created_at: <%= 10.minutes.ago %>
+  user: adi
+
+
+last_post:
+  content: "Halo then"
+  created_at: <%= Time.zone.now %>
+  user: pratama
+
+<% 30.times do |n| %>
+post_<%= n %>:
+  content: <%= Faker::Lorem.sentence(5) %>
+  created_at: <%= 2.days.ago %>
+  user: ilham
+<% end %>  
